@@ -18,6 +18,9 @@
 		D876632E205661E3005FADBA /* CicleHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = D876632C205661E3005FADBA /* CicleHomeController.m */; };
 		D876632F205661E3005FADBA /* CicleHomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D876632D205661E3005FADBA /* CicleHomeController.xib */; };
 		D8766332205663F4005FADBA /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = D8766331205663F4005FADBA /* UIImage+Image.m */; };
+		D876633820577105005FADBA /* MyCicleController.m in Sources */ = {isa = PBXBuildFile; fileRef = D876633720577105005FADBA /* MyCicleController.m */; };
+		D876633B2057730C005FADBA /* UITableViewCell+BMReusable.m in Sources */ = {isa = PBXBuildFile; fileRef = D876633A2057730C005FADBA /* UITableViewCell+BMReusable.m */; };
+		D876633E2057750D005FADBA /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = D876633C2057750C005FADBA /* UIView+Frame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,12 @@
 		D876632D205661E3005FADBA /* CicleHomeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CicleHomeController.xib; sourceTree = "<group>"; };
 		D8766330205663F4005FADBA /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
 		D8766331205663F4005FADBA /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		D876633620577105005FADBA /* MyCicleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCicleController.h; sourceTree = "<group>"; };
+		D876633720577105005FADBA /* MyCicleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCicleController.m; sourceTree = "<group>"; };
+		D87663392057730C005FADBA /* UITableViewCell+BMReusable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+BMReusable.h"; sourceTree = "<group>"; };
+		D876633A2057730C005FADBA /* UITableViewCell+BMReusable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+BMReusable.m"; sourceTree = "<group>"; };
+		D876633C2057750C005FADBA /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		D876633D2057750C005FADBA /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		F35DFF2CF59B930CDF248E09 /* Pods-CicleDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CicleDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CicleDemo/Pods-CicleDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,13 +139,19 @@
 		D87662F8205660DA005FADBA /* CicleDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D876633D2057750C005FADBA /* UIView+Frame.h */,
+				D876633C2057750C005FADBA /* UIView+Frame.m */,
 				D8766330205663F4005FADBA /* UIImage+Image.h */,
 				D8766331205663F4005FADBA /* UIImage+Image.m */,
+				D87663392057730C005FADBA /* UITableViewCell+BMReusable.h */,
+				D876633A2057730C005FADBA /* UITableViewCell+BMReusable.m */,
 				D87662F9205660DA005FADBA /* AppDelegate.h */,
 				D87662FA205660DA005FADBA /* AppDelegate.m */,
 				D876632B205661E3005FADBA /* CicleHomeController.h */,
 				D876632C205661E3005FADBA /* CicleHomeController.m */,
 				D876632D205661E3005FADBA /* CicleHomeController.xib */,
+				D876633620577105005FADBA /* MyCicleController.h */,
+				D876633720577105005FADBA /* MyCicleController.m */,
 				D87662FF205660DA005FADBA /* Main.storyboard */,
 				D8766302205660DA005FADBA /* Assets.xcassets */,
 				D8766304205660DA005FADBA /* LaunchScreen.storyboard */,
@@ -354,6 +369,9 @@
 			files = (
 				D8766309205660DB005FADBA /* main.m in Sources */,
 				D8766332205663F4005FADBA /* UIImage+Image.m in Sources */,
+				D876633820577105005FADBA /* MyCicleController.m in Sources */,
+				D876633E2057750D005FADBA /* UIView+Frame.m in Sources */,
+				D876633B2057730C005FADBA /* UITableViewCell+BMReusable.m in Sources */,
 				D876632E205661E3005FADBA /* CicleHomeController.m in Sources */,
 				D87662FB205660DA005FADBA /* AppDelegate.m in Sources */,
 			);
