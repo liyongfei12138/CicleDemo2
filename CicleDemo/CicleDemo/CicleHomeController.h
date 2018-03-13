@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CicleHomeController.h
 //  CicleDemo
 //
 //  Created by liyongfei on 2018/3/12.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface CicleHomeController : UIViewController
 
 @end
-

@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B0CB5E8455C759E3F07138C /* libPods-CicleDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D725CFFFAAC4E98161D21DA6 /* libPods-CicleDemo.a */; };
 		D87662FB205660DA005FADBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D87662FA205660DA005FADBA /* AppDelegate.m */; };
-		D87662FE205660DA005FADBA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D87662FD205660DA005FADBA /* ViewController.m */; };
 		D8766301205660DA005FADBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D87662FF205660DA005FADBA /* Main.storyboard */; };
 		D8766303205660DA005FADBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8766302205660DA005FADBA /* Assets.xcassets */; };
 		D8766306205660DA005FADBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8766304205660DA005FADBA /* LaunchScreen.storyboard */; };
 		D8766309205660DB005FADBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8766308205660DB005FADBA /* main.m */; };
 		D8766313205660DB005FADBA /* CicleDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8766312205660DB005FADBA /* CicleDemoTests.m */; };
 		D876631E205660DB005FADBA /* CicleDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D876631D205660DB005FADBA /* CicleDemoUITests.m */; };
+		D876632E205661E3005FADBA /* CicleHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = D876632C205661E3005FADBA /* CicleHomeController.m */; };
+		D876632F205661E3005FADBA /* CicleHomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D876632D205661E3005FADBA /* CicleHomeController.xib */; };
+		D8766332205663F4005FADBA /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = D8766331205663F4005FADBA /* UIImage+Image.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2432CB0CD6F25C319B3096D8 /* Pods-CicleDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CicleDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CicleDemo/Pods-CicleDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D725CFFFAAC4E98161D21DA6 /* libPods-CicleDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CicleDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87662F6205660DA005FADBA /* CicleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CicleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87662F9205660DA005FADBA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D87662FA205660DA005FADBA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D87662FC205660DA005FADBA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D87662FD205660DA005FADBA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D8766300205660DA005FADBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8766302205660DA005FADBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8766305205660DA005FADBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +54,12 @@
 		D8766319205660DB005FADBA /* CicleDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CicleDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D876631D205660DB005FADBA /* CicleDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CicleDemoUITests.m; sourceTree = "<group>"; };
 		D876631F205660DB005FADBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D876632B205661E3005FADBA /* CicleHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CicleHomeController.h; sourceTree = "<group>"; };
+		D876632C205661E3005FADBA /* CicleHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CicleHomeController.m; sourceTree = "<group>"; };
+		D876632D205661E3005FADBA /* CicleHomeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CicleHomeController.xib; sourceTree = "<group>"; };
+		D8766330205663F4005FADBA /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		D8766331205663F4005FADBA /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		F35DFF2CF59B930CDF248E09 /* Pods-CicleDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CicleDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CicleDemo/Pods-CicleDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B0CB5E8455C759E3F07138C /* libPods-CicleDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +88,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1092FBBAB59FC278CA624823 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D725CFFFAAC4E98161D21DA6 /* libPods-CicleDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2AC8E65E4A0224749F902469 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F35DFF2CF59B930CDF248E09 /* Pods-CicleDemo.debug.xcconfig */,
+				2432CB0CD6F25C319B3096D8 /* Pods-CicleDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D87662ED205660DA005FADBA = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +112,8 @@
 				D8766311205660DB005FADBA /* CicleDemoTests */,
 				D876631C205660DB005FADBA /* CicleDemoUITests */,
 				D87662F7205660DA005FADBA /* Products */,
+				2AC8E65E4A0224749F902469 /* Pods */,
+				1092FBBAB59FC278CA624823 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +130,13 @@
 		D87662F8205660DA005FADBA /* CicleDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D8766330205663F4005FADBA /* UIImage+Image.h */,
+				D8766331205663F4005FADBA /* UIImage+Image.m */,
 				D87662F9205660DA005FADBA /* AppDelegate.h */,
 				D87662FA205660DA005FADBA /* AppDelegate.m */,
-				D87662FC205660DA005FADBA /* ViewController.h */,
-				D87662FD205660DA005FADBA /* ViewController.m */,
+				D876632B205661E3005FADBA /* CicleHomeController.h */,
+				D876632C205661E3005FADBA /* CicleHomeController.m */,
+				D876632D205661E3005FADBA /* CicleHomeController.xib */,
 				D87662FF205660DA005FADBA /* Main.storyboard */,
 				D8766302205660DA005FADBA /* Assets.xcassets */,
 				D8766304205660DA005FADBA /* LaunchScreen.storyboard */,
@@ -139,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8766322205660DB005FADBA /* Build configuration list for PBXNativeTarget "CicleDemo" */;
 			buildPhases = (
+				D70F4AB17BF24F0B23334EA6 /* [CP] Check Pods Manifest.lock */,
 				D87662F2205660DA005FADBA /* Sources */,
 				D87662F3205660DA005FADBA /* Frameworks */,
 				D87662F4205660DA005FADBA /* Resources */,
+				C74D54CF482009397DFE005A /* [CP] Embed Pods Frameworks */,
+				E662490FE5F63A37ED3059E9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -239,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8766306205660DA005FADBA /* LaunchScreen.storyboard in Resources */,
+				D876632F205661E3005FADBA /* CicleHomeController.xib in Resources */,
 				D8766303205660DA005FADBA /* Assets.xcassets in Resources */,
 				D8766301205660DA005FADBA /* Main.storyboard in Resources */,
 			);
@@ -260,13 +296,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C74D54CF482009397DFE005A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CicleDemo/Pods-CicleDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D70F4AB17BF24F0B23334EA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CicleDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E662490FE5F63A37ED3059E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CicleDemo/Pods-CicleDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D87662F2205660DA005FADBA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D87662FE205660DA005FADBA /* ViewController.m in Sources */,
 				D8766309205660DB005FADBA /* main.m in Sources */,
+				D8766332205663F4005FADBA /* UIImage+Image.m in Sources */,
+				D876632E205661E3005FADBA /* CicleHomeController.m in Sources */,
 				D87662FB205660DA005FADBA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +516,7 @@
 		};
 		D8766323205660DB005FADBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F35DFF2CF59B930CDF248E09 /* Pods-CicleDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +531,7 @@
 		};
 		D8766324205660DB005FADBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2432CB0CD6F25C319B3096D8 /* Pods-CicleDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
