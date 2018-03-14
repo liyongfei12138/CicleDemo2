@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MyCicleCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="108" height="113"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="108" height="113"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button_qz_xq" translatesAutoresizingMaskIntoConstraints="NO" id="3LT-OW-Hcv">
+                        <rect key="frame" x="12" y="0.0" width="84" height="84"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="3LT-OW-Hcv" secondAttribute="height" multiplier="100:100" id="8LA-7J-mPR"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中国足球中国" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hF-cI-NPy">
+                        <rect key="frame" x="0.0" y="92" width="108" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Yk2-si-yxk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2hF-cI-NPy" secondAttribute="trailing" id="26F-q1-cnh"/>
+                <constraint firstItem="2hF-cI-NPy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ddb-3l-N4j"/>
+                <constraint firstItem="3LT-OW-Hcv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="JPV-YE-lcT"/>
+                <constraint firstItem="3LT-OW-Hcv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="Rax-f1-yXz"/>
+                <constraint firstAttribute="trailing" secondItem="3LT-OW-Hcv" secondAttribute="trailing" constant="12" id="lGQ-gC-H58"/>
+                <constraint firstItem="2hF-cI-NPy" firstAttribute="top" secondItem="3LT-OW-Hcv" secondAttribute="bottom" constant="8" id="uV2-cP-CCg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="188" height="297"/>
+            <connections>
+                <outlet property="cicleiImgView" destination="3LT-OW-Hcv" id="AKp-wt-ovf"/>
+                <outlet property="titleLabel" destination="2hF-cI-NPy" id="fU4-vC-8JY"/>
+            </connections>
+            <point key="canvasLocation" x="94" y="175.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="button_qz_xq" width="61" height="61"/>
+    </resources>
+</document>

@@ -1,0 +1,15 @@
+//
+//  MyCicleCollectionCell.h
+//  CicleDemo
+//
+//  Created by liyongfei on 2018/3/14.
+//  Copyright © 2018年 liyongfei. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface MyCicleCollectionCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *cicleiImgView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
+@end

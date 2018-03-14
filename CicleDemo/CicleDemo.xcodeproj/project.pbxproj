@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2B0CB5E8455C759E3F07138C /* libPods-CicleDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D725CFFFAAC4E98161D21DA6 /* libPods-CicleDemo.a */; };
+		D850A2442058BA100021775D /* MyCicleController.m in Sources */ = {isa = PBXBuildFile; fileRef = D850A2432058BA100021775D /* MyCicleController.m */; };
+		D850A2482058BA600021775D /* MyCicleCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D850A2462058BA600021775D /* MyCicleCollectionCell.m */; };
+		D850A2492058BA600021775D /* MyCicleCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D850A2472058BA600021775D /* MyCicleCollectionCell.xib */; };
 		D87662FB205660DA005FADBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D87662FA205660DA005FADBA /* AppDelegate.m */; };
 		D8766301205660DA005FADBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D87662FF205660DA005FADBA /* Main.storyboard */; };
 		D8766303205660DA005FADBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8766302205660DA005FADBA /* Assets.xcassets */; };
@@ -18,9 +21,10 @@
 		D876632E205661E3005FADBA /* CicleHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = D876632C205661E3005FADBA /* CicleHomeController.m */; };
 		D876632F205661E3005FADBA /* CicleHomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D876632D205661E3005FADBA /* CicleHomeController.xib */; };
 		D8766332205663F4005FADBA /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = D8766331205663F4005FADBA /* UIImage+Image.m */; };
-		D876633820577105005FADBA /* MyCicleController.m in Sources */ = {isa = PBXBuildFile; fileRef = D876633720577105005FADBA /* MyCicleController.m */; };
 		D876633B2057730C005FADBA /* UITableViewCell+BMReusable.m in Sources */ = {isa = PBXBuildFile; fileRef = D876633A2057730C005FADBA /* UITableViewCell+BMReusable.m */; };
 		D876633E2057750D005FADBA /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = D876633C2057750C005FADBA /* UIView+Frame.m */; };
+		D8A427932058F949003D9CE1 /* MyCicleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A427912058F949003D9CE1 /* MyCicleView.m */; };
+		D8A427942058F949003D9CE1 /* MyCicleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8A427922058F949003D9CE1 /* MyCicleView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,11 @@
 /* Begin PBXFileReference section */
 		2432CB0CD6F25C319B3096D8 /* Pods-CicleDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CicleDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CicleDemo/Pods-CicleDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D725CFFFAAC4E98161D21DA6 /* libPods-CicleDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CicleDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D850A2422058BA100021775D /* MyCicleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCicleController.h; sourceTree = "<group>"; };
+		D850A2432058BA100021775D /* MyCicleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCicleController.m; sourceTree = "<group>"; };
+		D850A2452058BA600021775D /* MyCicleCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCicleCollectionCell.h; sourceTree = "<group>"; };
+		D850A2462058BA600021775D /* MyCicleCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCicleCollectionCell.m; sourceTree = "<group>"; };
+		D850A2472058BA600021775D /* MyCicleCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCicleCollectionCell.xib; sourceTree = "<group>"; };
 		D87662F6205660DA005FADBA /* CicleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CicleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87662F9205660DA005FADBA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D87662FA205660DA005FADBA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,12 +71,13 @@
 		D876632D205661E3005FADBA /* CicleHomeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CicleHomeController.xib; sourceTree = "<group>"; };
 		D8766330205663F4005FADBA /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
 		D8766331205663F4005FADBA /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
-		D876633620577105005FADBA /* MyCicleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCicleController.h; sourceTree = "<group>"; };
-		D876633720577105005FADBA /* MyCicleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCicleController.m; sourceTree = "<group>"; };
 		D87663392057730C005FADBA /* UITableViewCell+BMReusable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+BMReusable.h"; sourceTree = "<group>"; };
 		D876633A2057730C005FADBA /* UITableViewCell+BMReusable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+BMReusable.m"; sourceTree = "<group>"; };
 		D876633C2057750C005FADBA /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		D876633D2057750C005FADBA /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		D8A427902058F949003D9CE1 /* MyCicleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCicleView.h; sourceTree = "<group>"; };
+		D8A427912058F949003D9CE1 /* MyCicleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCicleView.m; sourceTree = "<group>"; };
+		D8A427922058F949003D9CE1 /* MyCicleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCicleView.xib; sourceTree = "<group>"; };
 		F35DFF2CF59B930CDF248E09 /* Pods-CicleDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CicleDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CicleDemo/Pods-CicleDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,8 +160,14 @@
 				D876632B205661E3005FADBA /* CicleHomeController.h */,
 				D876632C205661E3005FADBA /* CicleHomeController.m */,
 				D876632D205661E3005FADBA /* CicleHomeController.xib */,
-				D876633620577105005FADBA /* MyCicleController.h */,
-				D876633720577105005FADBA /* MyCicleController.m */,
+				D850A2422058BA100021775D /* MyCicleController.h */,
+				D850A2432058BA100021775D /* MyCicleController.m */,
+				D8A427902058F949003D9CE1 /* MyCicleView.h */,
+				D8A427912058F949003D9CE1 /* MyCicleView.m */,
+				D8A427922058F949003D9CE1 /* MyCicleView.xib */,
+				D850A2452058BA600021775D /* MyCicleCollectionCell.h */,
+				D850A2462058BA600021775D /* MyCicleCollectionCell.m */,
+				D850A2472058BA600021775D /* MyCicleCollectionCell.xib */,
 				D87662FF205660DA005FADBA /* Main.storyboard */,
 				D8766302205660DA005FADBA /* Assets.xcassets */,
 				D8766304205660DA005FADBA /* LaunchScreen.storyboard */,
@@ -290,8 +306,10 @@
 			files = (
 				D8766306205660DA005FADBA /* LaunchScreen.storyboard in Resources */,
 				D876632F205661E3005FADBA /* CicleHomeController.xib in Resources */,
+				D850A2492058BA600021775D /* MyCicleCollectionCell.xib in Resources */,
 				D8766303205660DA005FADBA /* Assets.xcassets in Resources */,
 				D8766301205660DA005FADBA /* Main.storyboard in Resources */,
+				D8A427942058F949003D9CE1 /* MyCicleView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,8 +387,10 @@
 			files = (
 				D8766309205660DB005FADBA /* main.m in Sources */,
 				D8766332205663F4005FADBA /* UIImage+Image.m in Sources */,
-				D876633820577105005FADBA /* MyCicleController.m in Sources */,
+				D850A2442058BA100021775D /* MyCicleController.m in Sources */,
 				D876633E2057750D005FADBA /* UIView+Frame.m in Sources */,
+				D850A2482058BA600021775D /* MyCicleCollectionCell.m in Sources */,
+				D8A427932058F949003D9CE1 /* MyCicleView.m in Sources */,
 				D876633B2057730C005FADBA /* UITableViewCell+BMReusable.m in Sources */,
 				D876632E205661E3005FADBA /* CicleHomeController.m in Sources */,
 				D87662FB205660DA005FADBA /* AppDelegate.m in Sources */,

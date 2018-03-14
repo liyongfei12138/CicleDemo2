@@ -67,16 +67,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self initValue];
+    [self initValue];// 初始化数据
     [self initShadowView];
     [self initPageView];
     
     [pageView reloadData];
 }
+// 初始化数据
 - (void)initValue
 {
     dataArr = [NSArray arrayWithObjects:@"我的圈子", @"我的话题", @"我的回复", nil];
 }
+// 初始化ShadowView
 
 - (void)initShadowView
 {
@@ -85,23 +87,17 @@
     
     [self.view addSubview:shadowView];
 }
+
+// 初始化PageView
 - (void)initPageView
 {
-//    UIView *tabBarView = [[UIView alloc] initWithFrame:CGRectMake(0, shadowView.frame.size.height, shadowView.frame.size.width, 50)];
-//
-//    tabBarView.backgroundColor = [UIColor whiteColor];
-//    [self.view addSubview:tabBarView];
-//
-    
-    
-    
     pageView = [[TYTabPagerView alloc] init];
 //    pageView.tabBarHeight = 0;
     pageView.frame = CGRectMake(0, shadowView.frame.size.height, shadowView.frame.size.width, self.view.frame.size.height - shadowView.frame.size.height + shadowView.frame.size.height);
 //    pageView.tabBar.backgroundColor
     pageView.tabBar.layout.barStyle = TYPagerBarStyleProgressView;
     pageView.tabBar.layout.adjustContentCellsCenter = YES;
-    pageView.tabBar.layout.cellWidth = self.view.frame.size.width * 0.33;
+    pageView.tabBar.layout.cellWidth = self.view.frame.size.width * 0.3;
     pageView.tabBar.progressView.backgroundColor = [UIColor clearColor];
     
     
@@ -117,11 +113,20 @@
 - (UIView *)tabPagerView:(TYTabPagerView *)tabPagerView viewForIndex:(NSInteger)index prefetching:(BOOL)prefetching
 {
     UIView *view = [[UIView alloc]initWithFrame:[tabPagerView.layout frameForItemAtIndex:index]];
-    view.backgroundColor = RandomColor;
+    view.backgroundColor = kSmallGray;
     
-    MyCicleController *myCicle = [[MyCicleController alloc] initWithStyle:UITableViewStyleGrouped];
-    myCicle.view.y = 0;
-    myCicle.view.height = view.height;
+//    UIView *shadowView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, view.width, 1)];
+//    shadowView.backgroundColor = kSmallGray;
+//    [view addSubview:shadowView];
+//// 获取状态蓝高度
+    CGFloat statusHeight = [[UIApplication sharedApplication] statusBarFrame].size.height;
+    CGFloat height = view.height;
+    
+    MyCicleController *myCicle = [[MyCicleController alloc] init];
+    myCicle.collectionHeight = height;
+    myCicle.view.y = 1;
+    
+    myCicle.view.height = view.height - statusHeight - 44 - shadowView.height;
     
     [self addChildViewController:myCicle];
     [view addSubview:myCicle.view];
